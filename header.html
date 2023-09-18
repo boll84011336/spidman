@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="./css/index.css" href="">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <style>
+
+    .container {
+      width: 1440px;
+    }
+
+    .header {
+      display: flex;
+      justify-content:space-between;
+      background: #0E1727;
+    }
+
+    .left {
+      display: flex;
+      justify-content:space-between;
+      line-height: 80px;
+    }
+
+    .right {
+      padding-top: 20px;
+    }
+
+    .right button {
+      margin-right: 40px;
+
+    }
+
+    .lang {
+      color:#CED2DA;
+    }
+
+    .money {
+      background: #205EA4;
+      color: #EFF2F5;
+      border-radius: 6px;
+      padding: 11px 20px;
+    
+    }
+
+    nav {
+      align-items: center;  
+    }
+
+    nav a {
+      color: #CED2DA;
+      margin-right: 40px;
+    }
+
+    nav a:first-child  {
+      color: #DDA923;
+    }
+
+    .header .left img {
+      margin-left: 112px;
+      margin-right: 56px;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="left">
+        <img src="./img/Logo.svg" alt="" >
+        <nav class="">
+          <a href="/dashboard" >Home</a>
+          <a href="/team" >Team</a>
+          <a href="/projects" >Projects</a>
+          <a href="/reports" >Reports</a>
+        </nav>
+      </div>
+      <div class="right">
+        <button class="lang">繁體中文</button>
+        <button class="money">錢包連結</button>
+      </div>  
+    </div>
+
+  </div>
+</body>
+</html>
