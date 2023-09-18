@@ -7,31 +7,35 @@
   <link rel="./css/index.css" href="">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <style>
-
-    .container {
-      width: 1440px;
+    .containers {
+      width: 100vw;
     }
 
     .header {
       display: flex;
+      width: 100%;
       justify-content:space-between;
       background: #0E1727;
     }
 
     .left {
       display: flex;
-      justify-content:space-between;
       line-height: 80px;
     }
 
     .right {
-      padding-top: 20px;
+      display: flex;
+      align-items: center;
     }
 
     .right button {
       margin-right: 40px;
+    }
+
+    @media (min-width: 768px) {
 
     }
+
 
     .lang {
       color:#CED2DA;
@@ -51,7 +55,7 @@
 
     nav a {
       color: #CED2DA;
-      margin-right: 40px;
+      /* margin-right: 40px; */
     }
 
     nav a:first-child  {
@@ -67,21 +71,21 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="containers">
 
     <div class="header">
       <div class="left">
         <img src="./img/Logo.svg" alt="" >
         <nav class="">
-          <a href="/dashboard" >Home</a>
-          <a href="/team" >Team</a>
-          <a href="/projects" >Projects</a>
-          <a href="/reports" >Reports</a>
+          <a href="/dashboard" class="mr-[40px]">Home</a>
+          <a href="/team" class="mr-[40px]">Team</a>
+          <a href="/projects" class="mr-[40px]">Projects</a>
+          <a href="/reports" class="mr-[40px]">Reports</a>
         </nav>
       </div>
       <div class="right">
         <button class="lang">繁體中文</button>
-        <button class="money">錢包連結</button>
+        <button class="money ">錢包連結</button>
       </div>  
     </div>
 

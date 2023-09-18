@@ -8,30 +8,38 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <style>
 
-    .container {
-      width: 1440px;
+    .containers {
+      width: 100vw;
       height: 900px;
       background: #000;
+    }
+
+    .home {
+      width: 90vw;
+      margin: auto;
     }
 
     .text {
       color: #DDA923;
       margin-top: 56px;
-      margin-left: 112px;
     }
 
     .info_text {
       color: #EFF2F5;
       font-size: 46px;
-      margin-left: 112px;
     }
 
     .statistics {
-      width: 446px;
-      margin-left: 112px;
+      width: 80vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .contents_info {
+      width: 60%;
       display: flex;
       flex-direction: column;
-    
     }
 
     .content {
@@ -64,54 +72,59 @@
     }
 
     .map {
-      width: 738px;
-      height: 630px;
+      width: 100%;
+      height: 100%;
+      margin-left: 16px;
     }
 
     h3 {
       color: #EFF2F5;
-      margin-left: 112px;
       font-size: 28px;
     }
 
-    .tool {
+    /* .tool {
       width: 1216px;
       height: 460px;
       background-color: #000;
-    }
+    } */
   
 
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="info">
-      <p class="text">歡迎使用 Spiderweb SCAN </p>
-      <h2 class="info_text">Spiderweb 全網統計</h2>
+  <div class="containers">
+    <div class="home">
+      <div class="info">
+        <p class="text">歡迎使用 Spiderweb SCAN </p>
+        <h2 class="info_text">Spiderweb 全網統計</h2>
+      </div>
+      <div class="statistics">
+        <div class="contents_info">
+          <div class="content rounded">
+            <p class="p1">當前流量</p>
+            <p class="p2">113.12GB</p>
+            <p class="p3">歷史最高：132.12GB</p>
+          </div>
+          <div class="content rounded">
+            <p class="p1">當前流量</p>
+            <p class="p2">113.12GB</p>
+            <p class="p3">歷史最高：132.12GB</p>
+          </div>
+          <div class="content rounded">
+            <p class="p1">當前流量</p>
+            <p class="p2">113.12GB</p>
+            <p class="p3">歷史最高：132.12GB</p>
+          </div>
+        </div>
+        <div class="map">
+          <img src="./img/Rectangle 19.png" alt="">
+        </div>
+      </div>
+  
+      <h3>每日流量走勢</h3>
+      <div class="tool"></div>
     </div>
-    <div class="statistics">
-      <div class="content rounded">
-        <p class="p1">當前流量</p>
-        <p class="p2">113.12GB</p>
-        <p class="p3">歷史最高：132.12GB</p>
-      </div>
-      <div class="content rounded">
-        <p class="p1">當前流量</p>
-        <p class="p2">113.12GB</p>
-        <p class="p3">歷史最高：132.12GB</p>
-      </div>
-      <div class="content rounded">
-        <p class="p1">當前流量</p>
-        <p class="p2">113.12GB</p>
-        <p class="p3">歷史最高：132.12GB</p>
-      </div>
-      <div class="map">
-        <img src="./img/Rectangle 19.png" alt="">
-      </div>
-    </div>
-
-    <h3>每日流量走勢</h3>
-    <div class="tool"></div>
+ 
   </div>
 </body>
 </html>
