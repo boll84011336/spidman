@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css Reset -->
+  <link rel="./css/index.css" href="">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/datepicker.min.js"></script>
+
+  <style>
+
+    .containers {
+      width: 100vw;
+      background: #0E1727;
+      padding-left: 112px;
+      padding-right: 112px;
+    }
+
+    .wrapper {
+      width: 100%;
+      /* background-color: rgb(201, 231, 201); */
+      /* background: #323F52; */
+      background: #0E1727;;
+      height: 900px;
+    }
+
+    table {
+      width: 100%;      
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #323F52;
+      color: #CED2DA;
+    }
+
+    td {
+      background-color: #465465;
+      color: #EFF2F5;
+      height: 72px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+      
+    }
+    
+    .status1{
+      padding: 4px 10px;
+      border-radius: 16px;
+      background-color:#CDE6D4;
+      color: #097646;
+    }
+
+    .status2 {
+      padding: 4px 10px;
+      border-radius: 16px;
+      background-color:#FBF0EF;
+      color: #CB3023;
+    }
+
+    .status3 {
+      padding: 4px 10px;
+      border-radius: 16px;
+      background-color:#CED2DA;
+      color: #323F52;
+    }
+
+    .sdn_title {
+      margin-bottom: 26px;
+      font-size: 28px;
+      color:#EFF2F5;
+    }
+
+    .table_header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .update_list {
+      background-color: #465465;
+      color: #EFF2F5;
+      border-radius: 4px;
+      padding: 12px 18px;
+      margin-right: 8px;
+    }
+
+    .add_sdn{
+      background: #205EA4;
+      color: #EFF2F5;
+      border-radius: 4px;
+      padding: 12px 18px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="containers">
+    <div class="wrapper">
+      <div class="table_header">
+        <div class="title">
+          <h2 class="sdn_title">SDN列表：10筆資訊</h2>
+        </div>
+        <div class="btn">
+          <button class="update_list">更新列表</button>
+          <button class="add_sdn">新增SDN</button>
+        </div>
+        
+      </div>
+      <table>
+        <tr>
+          <th>#</th>
+          <th>SN</th>
+          <th>狀態</th>
+          <th>IP位置</th>
+          <th>最後同步時間</th>
+          <th>登陸時間</th>
+          <th>操作</th>
+        </tr>
+        <!-- 数据行 1 -->
+        <tr>
+          <td>1</td>
+          <td>11CB00413</td>
+          <td><button class="status1">正常</button></td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>
+        <!-- 数据行 2 -->
+        <tr>
+          <td>2</td>
+          <td>11CB00413</td>
+          <td><button class="status2">連線異常</button></td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>11CB00413</td>
+          <td><button class="status3">未使用</button></td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>11CB00413</td>
+          <td>正常</td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>  <tr>
+          <td>1</td>
+          <td>11CB00413</td>
+          <td>正常</td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>  <tr>
+          <td>1</td>
+          <td>11CB00413</td>
+          <td>正常</td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>  <tr>
+          <td>1</td>
+          <td>11CB00413</td>
+          <td>正常</td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>  <tr>
+          <td>1</td>
+          <td>11CB00413</td>
+          <td>正常</td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>  <tr>
+          <td>9</td>
+          <td>11CB00413</td>
+          <td>正常</td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>  <tr>
+          <td>10</td>
+          <td>11CB00413</td>
+          <td>正常</td>
+          <td>821.12</td>
+          <td>2023/06/01 21:00</td>
+          <td>2023/06/01 21:00</td>
+          <td>詳情</td>
+        </tr>
+        <!-- 添加更多数据行，依此类推 -->
+      </table>
+    </div>
+  </div>
+ 
+</body>
+</html>
